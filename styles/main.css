@@ -1,0 +1,27 @@
+@import "global.css";
+@import "form.css";
+@import "variables.css";
+
+.tourist-attractions {
+  margin-left: 130px;
+  padding-right: 16px;
+}
+
+.tourist-attractions-title {
+  margin-top: 48px;
+  margin-bottom: 36px;
+  font-size: 32px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 855px) {
+  .tourist-attractions {
+    margin-left: 0px;
+    padding: 0 16px 68px;
+  }
+  .tourist-attractions-title {
+    margin: 0;
+    padding: 16px 0 32px;
+  }
+}
