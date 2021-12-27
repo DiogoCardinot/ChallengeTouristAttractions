@@ -1,6 +1,7 @@
 @import "global.css";
 @import "form.css";
 @import "variables.css";
+@import "touristsAttractions.css";
 
 .tourist-attractions {
   margin-left: 130px;
