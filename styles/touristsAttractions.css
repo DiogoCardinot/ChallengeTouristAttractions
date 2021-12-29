@@ -1,11 +1,10 @@
 .tourist-attractions-cards {
-  margin-bottom: 193px;
+  margin-bottom: 190px;
   margin-left: 130px;
 }
 
 .tourist-attractions-cards-title {
   font-family: "Poppins";
-  font-style: normal;
   font-weight: bold;
   font-size: 32px;
   line-height: 120%;
@@ -15,7 +14,7 @@
 .tourist-attractions-cards-wrapper {
   display: grid;
   grid-template-columns: repeat(2, max-content);
-  gap: 20px;
+  column-gap: 20px;
   justify-content: center;
 }
 .tourist-attractions-card {
@@ -62,10 +61,10 @@
   .tourist-attractions-cards {
     margin-left: 0px;
     padding: 0 26px;
-    margin-bottom: 34px;
+    margin-bottom: 10px;
   }
   .tourist-attractions-cards-title {
-    padding: 68px 0 32px;
+    padding: 0 0 32px;
   }
   .tourist-attractions-cards-wrapper {
     display: flex;
@@ -77,6 +76,7 @@
     display: flex;
     flex-direction: column;
     max-width: 343px;
+    margin-bottom: 24px;
   }
   .tourist-attractions-card-image {
     width: 100%;

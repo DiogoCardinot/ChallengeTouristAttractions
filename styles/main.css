@@ -13,7 +13,8 @@
   margin-bottom: 36px;
   font-size: 32px;
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-weight: bold;
+  line-height: 120%;
 }
 
 @media screen and (max-width: 855px) {
@@ -24,5 +25,6 @@
   .tourist-attractions-title {
     margin: 0;
     padding: 16px 0 32px;
+    font-weight: bold;
   }
 }

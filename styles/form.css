@@ -1,7 +1,6 @@
 .form-tourist-attractions {
   display: flex;
   flex-direction: column;
-  width: 100%;
   max-width: 721px;
 }
 .form-tourist-attractions-inputs {
@@ -22,7 +21,6 @@
   padding: 94px 114px;
   color: var(--placeholderColor);
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
 }
 .form-tourist-attractions-input-image {
   display: none;
@@ -33,14 +31,13 @@
   height: 56px;
   border: 1px solid var(--gray-100);
   border-radius: 4px;
-  padding: 0 12px;
+  padding: 0 16px;
   margin-bottom: 16px;
 }
 
 .form-tourist-attractions-input-description {
   max-width: 417px;
-  height: 136px;
-  padding: 38px 12px 74px;
+  padding: 40px 16px 74px;
   border: 1px solid var(--gray-100);
   border-radius: 4px;
 }

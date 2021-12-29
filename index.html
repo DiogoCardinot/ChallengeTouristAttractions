@@ -21,12 +21,12 @@
                 <div class="tourist-attractions">
                     <h2 class="tourist-attractions-title">Adicionar um Ponto Turístico</h2>
 
-                    <form class="form-tourist-attractions">
+                    <form class="form-tourist-attractions" id="form">
 
                                 <div class="form-tourist-attractions-inputs">
 
-                                    <label for="input-image" class="form-tourist-attractions-label"> Imagem </label>
-                                    <input class="form-tourist-attractions-input-image" type="file" name="input-image" id="input-image" accept="image/*" />
+                                    <label for="input-image" class="form-tourist-attractions-label"  > Imagem </label>
+                                    <input id="input-image" class="form-tourist-attractions-input-image" type="file" name="input-image"  accept="image/*" />
 
                                     <div class="form-tourist-attractions-input-text">
                                         <input class="form-tourist-attractions-input-title" name="input-title" type="text" placeholder="Título" />
@@ -36,16 +36,18 @@
                                 </div>
                                 
                                 <div class="submit-button">
-                                    <button type="submit" class="form-tourist-attractions-button-submit"> Adicionar</button>
+                                    <button type="submit" id="button-submit" class="form-tourist-attractions-button-submit"> Adicionar</button>
 
                                 </div>
-                    </form>
+                            </form>
 
-                </div>
-                    <!-- RENDERIZAÇÃO DOS CARDS -->
-                    <div class="tourist-attractions-cards">
-                        <h2 class="tourist-attractions-cards-title">Pontos Turísticos</h2>
-
+                        </div>
+                        <!-- RENDERIZAÇÃO DOS CARDS -->
+                        <div class="tourist-attractions-cards">
+                            
+                            <h2 class="tourist-attractions-cards-title">Pontos Turísticos</h2>
+                            
+                            <!-- <img  id="img" /> -->
                         <div class='tourist-attractions-cards-wrapper' >
             
 
