@@ -24,12 +24,17 @@
                     <form class="form-tourist-attractions" id="form">
 
                                 <div class="form-tourist-attractions-inputs">
+                                    <label for="input-image" class="form-tourist-attractions-label" id='image-label'>Imagem</label>
 
-                                    <input id="input-image" placeholder="Imagem(URL)" class="form-tourist-attractions-input-image" type="url" required />
+                                    <img id='preview' class="preview-image">
+                                    
+                                    <input id='input-image' class="form-tourist-attractions-input-image"type="file" name= 'input-image' accept="image/*" required onchange="showPreview(event);">
+
+                                    <!-- <input id="input-image" placeholder="Imagem(URL)" class="form-tourist-attractions-input-image" type="url" required /> -->
 
                                     <div class="form-tourist-attractions-input-text">
-                                        <input class="form-tourist-attractions-input-title" name="input-title" type="text" placeholder="Título" />
-                                        <input class="form-tourist-attractions-input-description" name="input-description" type="text" placeholder="Descrição" />
+                                        <input class="form-tourist-attractions-input-title" name="input-title" type="text" placeholder="Título" required/>
+                                        <input class="form-tourist-attractions-input-description" name="input-description" type="text" placeholder="Descrição" required />
         
                                     </div>
                                 </div>

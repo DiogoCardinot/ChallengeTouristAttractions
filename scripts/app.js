@@ -22,13 +22,24 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector(".form-tourist-attractions");
   form.addEventListener("submit", addItemToList);
 
+  inputImage.addEventListener("change", imagePreview);
+
+  function imagePreview(event) {
+    if (event.target.files.length > 0) {
+      var src = URL.createObjectURL(event.target.files[0]);
+      var preview = document.getElementById("preview");
+      preview.src = src;
+      preview.style.display = "none";
+    }
+  }
+
   function addItemToList(event) {
     event.preventDefault();
-    const itemImage = event.target["input-image"].value;
+    const itemImage = event.target["preview"].src;
     const itemTitle = event.target["input-title"].value;
     const itemDescription = event.target["input-description"].value;
 
-    if (itemTitle !== "" && itemDescription !== "") {
+    if (itemImage !== "" && itemTitle !== "" && itemDescription !== "") {
       //OBJETO ITEM COM TODOS OS ATRIBUTOS DOS INPUTS
       const item = {
         image: itemImage,
@@ -48,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="tourist-attractions-card">
             
                 <div class="tourist-attractions-card-images">
-                    <img id="output-image" src="${item.image}" class="tourist-attractions-card-image"  alt="${item.title}" /> 
+                    <img id="output-image" class="tourist-attractions-card-image" src="${item.image}"  alt="${item.title}" /> 
                 </div> 
 
                 <div class="tourist-attractions-card-text">

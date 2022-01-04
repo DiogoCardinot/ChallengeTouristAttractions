@@ -15,11 +15,18 @@
   width: 100%;
 }
 
-.form-tourist-attractions-input-image {
-  max-width: 288px;
+.form-tourist-attractions-label {
   border: 1px solid var(--gray-100);
   border-radius: 4px;
-  padding: 94px 92px;
+  padding: 94px 114px;
+  color: var(--placeholderColor);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.form-tourist-attractions-input-image {
+  display: none;
 }
 
 .form-tourist-attractions-input-title {
@@ -80,6 +87,9 @@
   .form-tourist-attractions-inputs {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .form-tourist-attractions-label {
+    padding: 92px 102px;
   }
 
   .form-tourist-attractions-input-text {
