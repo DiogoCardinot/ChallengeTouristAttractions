@@ -1,7 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  //CONSTANTE USADA PARA ADICIONAR O ITEM NA LISTA QUANDO A AÇÃO SUBMIT FOR OUVIDA
-  const form = document.querySelector(".form-tourist-attractions");
-
   //CONSTANTES USADAS APENAS PARA RESETAR OS INPUTS
   const inputImage = document.querySelector(
     ".form-tourist-attractions-input-image"
@@ -14,11 +11,15 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   //CONSTANTE QUE VAI RECEBER OS ITENS DOS INPUTS
-  const list = [];
+  const touristsAttractionsList = [];
 
   //CONSTANTE ONDE VÃO SER RENDERIZADOS OS ITENS
-  const items = document.querySelector(".tourist-attractions-cards-wrapper");
+  const touristAttractionsItems = document.querySelector(
+    ".tourist-attractions-cards-wrapper"
+  );
 
+  //CONSTANTE USADA PARA ADICIONAR O ITEM NA LISTA QUANDO A AÇÃO SUBMIT FOR OUVIDA
+  const form = document.querySelector(".form-tourist-attractions");
   form.addEventListener("submit", addItemToList);
 
   function addItemToList(event) {
@@ -34,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         title: itemTitle,
         description: itemDescription,
       };
-      list.push(item);
+      touristsAttractionsList.push(item);
       renderListItems();
       resetInputs();
     }
@@ -42,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function renderListItems() {
     let itemsStructure = "";
-    list.forEach(function (item) {
+    touristsAttractionsList.forEach(function (item) {
       itemsStructure += `
             <div class="tourist-attractions-card">
             
@@ -59,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
           `;
     });
-    items.innerHTML = itemsStructure;
+    touristAttractionsItems.innerHTML = itemsStructure;
   }
 
   function resetInputs() {

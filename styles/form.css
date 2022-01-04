@@ -16,9 +16,10 @@
 }
 
 .form-tourist-attractions-input-image {
+  max-width: 288px;
   border: 1px solid var(--gray-100);
   border-radius: 4px;
-  padding: 94px 114px;
+  padding: 94px 92px;
 }
 
 .form-tourist-attractions-input-title {
@@ -75,9 +76,7 @@
   .form-tourist-attractions {
     max-width: 100%;
   }
-  .form-tourist-attractions-input-image {
-    padding: 92px 102px;
-  }
+
   .form-tourist-attractions-inputs {
     flex-direction: column;
     align-items: flex-start;
