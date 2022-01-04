@@ -23,14 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function addItemToList(event) {
     event.preventDefault();
-    // const itemImage = event.target["input-image"].value;
+    const itemImage = event.target["input-image"].value;
     const itemTitle = event.target["input-title"].value;
     const itemDescription = event.target["input-description"].value;
 
     if (itemTitle !== "" && itemDescription !== "") {
       //OBJETO ITEM COM TODOS OS ATRIBUTOS DOS INPUTS
       const item = {
-        // image: itemImage,
+        image: itemImage,
         title: itemTitle,
         description: itemDescription,
       };
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="tourist-attractions-card">
             
                 <div class="tourist-attractions-card-images">
-                    <img id="output-image" class="tourist-attractions-card-image" src="../images/theforest.png" alt="${item.title}" /> 
+                    <img id="output-image" src="${item.image}" class="tourist-attractions-card-image"  alt="${item.title}" /> 
                 </div> 
 
                 <div class="tourist-attractions-card-text">
@@ -61,20 +61,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     items.innerHTML = itemsStructure;
   }
-
-  let photo = document.getElementById("img");
-  let file = document.getElementById("input-image");
-  let imagem = document.getElementById("output-image");
-  let button = document.getElementById("button-submit");
-
-  button.addEventListener("click", () => {
-    let reader = new FileReader();
-    reader.onload = () => {
-      imagem.src = reader.result;
-    };
-
-    reader.readAsDataURL(file.files[0]);
-  });
 
   function resetInputs() {
     inputTitle.value = "";

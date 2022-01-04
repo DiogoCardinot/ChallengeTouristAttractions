@@ -63,6 +63,9 @@
     padding: 0 26px;
     margin-bottom: 10px;
   }
+  .tourist-attractions-card-images {
+    width: 100%;
+  }
   .tourist-attractions-cards-title {
     padding: 0 0 32px;
   }
