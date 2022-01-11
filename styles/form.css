@@ -1,0 +1,112 @@
+.form-tourist-attractions {
+  display: flex;
+  flex-direction: column;
+  max-width: 721px;
+}
+.form-tourist-attractions-inputs {
+  display: flex;
+  align-items: center;
+}
+
+.form-tourist-attractions-input-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+  width: 100%;
+}
+
+.form-tourist-attractions-label {
+  border: 1px solid var(--gray-100);
+  border-radius: 4px;
+  padding: 94px 114px;
+  color: var(--placeholderColor);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.form-tourist-attractions-input-image {
+  display: none;
+}
+
+.form-tourist-attractions-input-title {
+  max-width: 328px;
+  height: 56px;
+  border: 1px solid var(--gray-100);
+  border-radius: 4px;
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.form-tourist-attractions-input-description {
+  max-width: 417px;
+  padding: 40px 16px 74px;
+  border: 1px solid var(--gray-100);
+  border-radius: 4px;
+}
+
+.form-tourist-attractions-button-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 151px;
+  height: 56px;
+  background: var(--orange-100);
+  border: 0;
+  color: var(--white);
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  border-radius: 8px;
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: flex-end;
+}
+.form-tourist-attractions-button-submit:hover {
+  background: #aa151a;
+}
+
+.form-tourist-attractions-button-submit:active {
+  background: var(--orange-100);
+}
+
+@media screen and (max-width: 855px) {
+  .tourist-attractions {
+    margin-left: 0px;
+  }
+  .form-tourist-attractions {
+    max-width: 100%;
+  }
+
+  .form-tourist-attractions-inputs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form-tourist-attractions-label {
+    padding: 92px 102px;
+  }
+
+  .form-tourist-attractions-input-text {
+    margin: 0;
+    margin-top: 16px;
+  }
+  .form-tourist-attractions-input-title {
+    max-width: 100%;
+  }
+  .form-tourist-attractions-input-description {
+    max-width: 100%;
+  }
+  .submit-button {
+    justify-content: center;
+  }
+  .form-tourist-attractions-button-submit {
+    max-width: 100%;
+    margin-top: 8px;
+  }
+}
